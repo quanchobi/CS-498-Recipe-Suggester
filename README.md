@@ -1,20 +1,20 @@
 # Recipe Suggester
-Suggests recipes based on an ingredients list passed in
+Uses openAI's API and image analysis to suggest a recipe based on ingredients found in an image.
 
-## DEPENDENCIES:
-* Python3
-* Python-dotenv
-* OpenAI pip package
+### By Jacob Hanks and Shen Zhang
 
-## HOW TO USE:
-* Install python3 and pip
-* clone the repository
-* make the location where you cloned the repository a python3 venv
-* install python-dotenv and openai with pip
-* set your openAI API key in a .env file (create it if it doesn't exist)
-* run using python3, then enter your ingredients list.
+## INSTALLATION:
+clone the repository:
+`git clone https://github.com/quanchobi/CS-498-Recipe-Suggester/tree/main && cd CS-498-Recipe-Suggester`
 
-## TODO:
-* pytorch image analysis to detect objects in a fridge/pantry, convert to text then add to the pr
-* Parse the json output to only show GPT's response
-* Stream the output, just like ChatGPT does
+make a venv:
+`python3 venv -m .venv`
+
+install pip packages:
+`pip install -r .requirements.txt`
+
+run:
+`python3 source/init.py`
+
+## NOTES:
+This is currently very unfinished. Much work needs to be done.
