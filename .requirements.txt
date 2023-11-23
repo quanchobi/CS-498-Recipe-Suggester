@@ -1,0 +1,9 @@
+openai
+opencv-contrib-python
+python-dotenv
+torch
+torchvision
+numpy
+tqdm
+imutils
+matplotlib
