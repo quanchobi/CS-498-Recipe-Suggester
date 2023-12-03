@@ -55,7 +55,7 @@ def get_key() -> str:
 
 
 
-def prompt(ingredients: str, context: str) -> None:
+def prompt(ingredients: str, context: str) -> str:
     """
     prompt_recipe:  Prompts OpenAI's chatGPT for a recipe suggestion with the passed in ingredients and added context
     Arguments:      Takes two strings. As the name implies, the ingredients string takes a list of ingredients found earlier by the image analysis part of the program.
@@ -68,7 +68,7 @@ def prompt(ingredients: str, context: str) -> None:
 
     # If no ingredients were found, error
     if not ingredients:
-        return
+        return "Error"
 
     # Find the API key from the options above
     key = get_key()
@@ -92,4 +92,5 @@ def prompt(ingredients: str, context: str) -> None:
         ],
     )
 
-    print(completion.choices[0].message.content)
+
+    return str(completion.choices[0].message.content)
