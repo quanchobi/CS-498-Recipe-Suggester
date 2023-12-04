@@ -66,6 +66,7 @@ def prompt(ingredients: str, context: str) -> str:
     Postconditions: Prints the string returned by chatGPT to stdout.
     """
 
+    print(ingredients)
     # If no ingredients were found, error
     if not ingredients:
         return "Error"

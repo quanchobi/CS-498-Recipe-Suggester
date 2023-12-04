@@ -3,7 +3,6 @@ from torchvision.models.detection import fasterrcnn_resnet50_fpn
 from torchvision.transforms import functional
 from PIL import Image
 
-
 def detect_ingredients(image_path: str) -> str:
     """
 
